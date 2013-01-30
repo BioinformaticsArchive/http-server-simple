@@ -4,10 +4,11 @@ use warnings;
 package HTTP::Server::Simple;
 use FileHandle;
 use Socket;
+use Socket qw(IN6ADDR_ANY);
 use Carp;
 
 use vars qw($VERSION $bad_request_doc);
-$VERSION = '0.45_02';
+$VERSION = '0.45_03';
 
 =head1 NAME
 
